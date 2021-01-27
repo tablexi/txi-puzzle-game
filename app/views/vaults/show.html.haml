@@ -10,4 +10,8 @@
     font-family: 'Roboto', sans-serif;
   }
 
-%p You're learning fast. Check back here tomorrow for more.
+%p You're learning fast. The next step is protected by a three headed dog.
+= form_tag('/853a77881c5eb4733ed5f31b96b10084e9c9525e', method: :patch) do
+  = password_field_tag :secret
+  = submit_tag '➡'
+
