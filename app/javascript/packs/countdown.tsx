@@ -33,8 +33,6 @@ const Colon = styled.span`
 `;
 
 const targetDateTime = moment.utc([2021, 1, 4, 15, 0, 0]);
-console.log(targetDateTime);
-console.log(moment.utc());
 const calculateDuration = () => moment.duration(moment.utc().diff(targetDateTime))
 
 const Countdown = (): JSX.Element => {
@@ -56,7 +54,7 @@ const Countdown = (): JSX.Element => {
   return (
     <Container>
       <Timer>
-        <Digit>{days}</Digit>
+        <Digit>T-{days}</Digit>
         <Colon>:</Colon>
         <Digit>{hours}</Digit>
         <Colon>:</Colon>
@@ -71,6 +69,6 @@ const Countdown = (): JSX.Element => {
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Countdown />,
-    document.body.appendChild(document.createElement('div')),
+    document.getElementById('countdown'),
   )
 })

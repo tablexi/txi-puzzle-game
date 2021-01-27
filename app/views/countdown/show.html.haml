@@ -1,8 +1,30 @@
+.container
+  .saturnv
+    = image_tag 'saturnv.jpg'
+  %div#countdown
 = javascript_pack_tag 'countdown'
+/
+  Things are often lurking beneath the covers. For more, see txi.industries/secret
 :css
   body {
     background-color: #333333;
     padding: 0;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
   }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .saturnv {
+    flex: 0 1 50%;
+  }
+
+  #countdown {
+    flex: 0 1 50%;
+  }
+
+  img { width: 100% }
 

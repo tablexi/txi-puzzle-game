@@ -1,0 +1,5 @@
+class VaultsController < ApplicationController
+  def show
+    render :show
+  end
+end
