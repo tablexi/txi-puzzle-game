@@ -1,0 +1,66 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: newtxi
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
+    service.beta.kubernetes.io/aws-load-balancer-ssl-cert: arn:aws:acm:us-west-2:713548166849:certificate/812c5e03-0d22-4684-b47b-a864219d398b
+    service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "https"
+spec:
+  selector:
+    app: newtxi
+  ports:
+    - name: http
+      port: 80
+      targetPort: 3000
+    - name: https
+      port: 443
+      targetPort: 3000
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: newtxi}
+spec:
+  replicas: 1
+  selector:
+    matchLabels: {app: newtxi}
+  strategy:
+    rollingUpdate: {maxSurge: 1, maxUnavailable: 0}
+    type: RollingUpdate
+  revisionHistoryLimit: 1
+  template:
+    metadata:
+      labels: {app: newtxi}
+      name: newtxi
+    spec:
+      containers:
+      - image: "{{ $.Values.image.repository }}:{{ $.Values.image.tag }}"
+        imagePullPolicy: IfNotPresent
+        name: newtxi
+        command: ["bundle"]
+        args: ["exec", "puma", "-C", "config/puma.rb"]
+        ports:
+          - containerPort: 3000
+            name: newtxi
+        envFrom:
+          - configMapRef:
+              name: newtxi
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 3000
+          initialDelaySeconds: 5
+        resources:
+          limits:
+            memory: "500Mi"
+            cpu: "700m"
+          requests:
+            memory: "500Mi"
+            cpu: "700m"
+        terminationMessagePath: /dev/termination-log
+      dnsPolicy: ClusterFirst
+      restartPolicy: Always
+      securityContext: {}
+      terminationGracePeriodSeconds: 30

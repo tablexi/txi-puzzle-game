@@ -1,0 +1,10 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: newtxi
+data:
+  RAILS_ENV: production
+  DATABASE_URL: postgres://root:root@postgres:5432/newtxi_prod
+  PORT: "3000"
+  RAILS_SERVE_STATIC_FILES: "true"
