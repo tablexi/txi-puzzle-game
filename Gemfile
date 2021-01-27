@@ -10,6 +10,7 @@ gem 'pg'
 gem 'puma'
 gem 'rails'
 gem 'webpacker'
+gem 'lograge'
 
 gem 'bootsnap', require: false
 
