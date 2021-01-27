@@ -1,0 +1,7 @@
+.git
+.github
+docs/
+infrastructure/
+k8s/
+log/
+node_modules/
