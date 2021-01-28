@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   get '/0b8ee0f6f93c9d6e7d5bb26cafff96acd53b96fd' => 'cerberus#show'
 
   get '/leaderboard' => 'leaderboard#show'
+  get '/status' => 'status#show'
   get '/' => 'countdown#show'
 end
