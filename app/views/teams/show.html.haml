@@ -12,25 +12,28 @@
   }
 
   td {
-    text-align: right;
+    text-align: left;
     border: 1px solid white;
     padding: 8px;
   }
 
+  th {
+    text-align: right;
+    padding: 8px;
+  }
+
+  p,h2 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+
 %h2 Teams
 
-%p Winners are now decided by teams.
+%p Winners are now decided by teams. You can contact your team members now.
 
 %table
   %tr
     %th Venus
-    %th Mars
-    %th Jupiter
-    %th Enceladus
-    %th Ceres
-    %th Earth
-    %th Kepler-16b
-  %tr
     %td Claire Podulka
     %td Quinn Stephens
     %td Kara Carrell
@@ -38,6 +41,7 @@
     %td Andrew Horner
     %td Mark Estabrook
   %tr
+    %th Mars
     %td Kelly Uher
     %td Amanda Snyder
     %td Alyssa Ramsey
@@ -45,6 +49,7 @@
     %td Matt Kornatz
     %td Eric Boyer
   %tr
+    %th Jupiter
     %td MJ Jastrebski
     %td Lora Ferraro
     %td Youjin Lee
@@ -53,6 +58,7 @@
     %td Pete Brooks
     %td Sam Gensburg
   %tr
+    %th Enceladus
     %td Mark Rickmeier
     %td Toun Ogundu
     %td Alex Chen
@@ -60,6 +66,7 @@
     %td Cameron Silver
     %td Jason Hanggi
   %tr
+    %th Ceres
     %td Rolf Russell
     %td Gayle Silverman
     %td Rex Chekal
@@ -68,6 +75,7 @@
     %td John Dzak
     %td Elizabeth Murphy
   %tr
+    %th Earth
     %td Ellen Brast
     %td John Newfry
     %td Matt Reich
@@ -75,11 +83,10 @@
     %td Danny Maher
     %td Mak Arnautovic
   %tr
+    %th Kepler-16b
     %td Patrick Turley
     %td Benedict Wong
     %td Annie Swank
     %td Courtney Shuster
     %td Ed LaFoy
     %td Robin Dunlop
-
-= image_tag 'leaderboard.png'
