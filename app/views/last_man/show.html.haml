@@ -1,0 +1,21 @@
+:css
+  body {
+    background-color: #333333;
+    padding: 64px;
+    margin: 0;
+  }
+
+  p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    max-width: 400px;
+  }
+
+%p The Last Man follows Lionel Verney. Man ends up ravaged by a contagion that nearly wipes mankind out. Time and attrition leave Lionel alone on the planet, left to SearcH across the globe for any survivors.
+
+%p What country (circa 2021) is famous for producing robots and is a large island chain?
+
+= form_tag('/c4a048f41039bbb358ef3a1c460caf2e46137843', method: :patch) do
+  = password_field_tag :secret
+  = submit_tag '➡'
+

@@ -1,0 +1,22 @@
+:css
+  body {
+    background-color: #333333;
+    padding: 64px;
+    margin: 0;
+  }
+
+  p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    max-width: 400px;
+  }
+
+%p Jules Verne. You found him. You see, in the paST the genre of science fiction was all about how scary the future would be. Mary Shelley wrote Frankenstein. Victor Hugo wrote The Legend of the Centuries.
+
+%p Then, Jules Verne came and romanticized technology. Right as technology turned dangerous. Twenty Thousand Leagues Under the Sea, Journey to the Center of the EARth, etc. became the tropes of science fiction that evolved into science fact. His prescience is reknowned, and it hid the truth. You should be afraid of technology.
+
+%p What other dystopian novel did Mary Shelley write in 1826?
+
+= form_tag('/underthesea', method: :patch) do
+  = password_field_tag :secret
+  = submit_tag '➡'
