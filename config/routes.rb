@@ -28,5 +28,6 @@ Rails.application.routes.draw do
   get '/leaderboard' => 'leaderboard#show'
   get '/teams' => 'teams#show'
   get '/status' => 'status#show'
+  get '/ack' => 'ack#show'
   get '/' => 'countdown#show'
 end
