@@ -18,33 +18,34 @@
   }
 
 %table
+  %caption Game Leaderboard
   %tr
-    %th Name
-    %th Points
+    %th{scope:"col"} Name
+    %th{scope:"col"} Points
   %tr
-    %td Jules
+    %td{scope:"row"} Jules
     %td 1000
   %tr
-    %td Kepler-16b
+    %td{scope:"row"} Kepler-16b
     %td 70
   %tr
-    %td Earth
+    %td{scope:"row"} Earth
     %td 60
   %tr
-    %td Venus
+    %td{scope:"row"} Venus
     %td 50
   %tr
-    %td Jupiter
+    %td{scope:"row"} Jupiter
     %td 45
   %tr
-    %td Mars
+    %td{scope:"row"} Mars
     %td 0
   %tr
-    %td Ceres
+    %td{scope:"row"} Ceres
     %td 0
   %tr
-    %td Enceladus
+    %td{scope:"row"} Enceladus
     %td 0
 
 / There is just one true /path
-= image_tag 'leaderboard.png'
+= image_tag 'leaderboard.png', alt: 'visual puzzle'
