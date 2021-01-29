@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get '/3ccd3784d5651349d4654682820dd523abdf97b6' => 'crossword#show'
 
   get '/leaderboard' => 'leaderboard#show'
+  get '/teams' => 'teams#show'
   get '/status' => 'status#show'
   get '/' => 'countdown#show'
 end
