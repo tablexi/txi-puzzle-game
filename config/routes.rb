@@ -8,6 +8,12 @@ Rails.application.routes.draw do
 
   get '/0b8ee0f6f93c9d6e7d5bb26cafff96acd53b96fd' => 'cerberus#show'
 
+  get '/applepie' => 'apple_pie#show'
+  patch '/applepie' => 'apple_pie#update'
+  get '/7c6a7938b8e5887ba3b118d6299d197cc8b56df3' => 'first_aid#show'
+  patch '/7c6a7938b8e5887ba3b118d6299d197cc8b56df3' => 'first_aid#update'
+  get '/c75ce6b5a5e70cb15a3092a4284e11044781a624' => 'lines#show'
+
   get '/leaderboard' => 'leaderboard#show'
   get '/status' => 'status#show'
   get '/' => 'countdown#show'

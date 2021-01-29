@@ -1,0 +1,17 @@
+:css
+  body {
+    background-color: #333333;
+    padding: 64px;
+    margin: 0;
+  }
+
+  p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+
+%p The big reveal is getting closer. But, first, I need to tell you a story.
+= image_tag 'applepie.png'
+= form_tag('/applepie', method: :patch) do
+  = password_field_tag :secret
+  = submit_tag '➡'

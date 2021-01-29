@@ -1,0 +1,18 @@
+:css
+  body {
+    background-color: #333333;
+    padding: 64px;
+    margin: 0;
+  }
+
+  p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+
+%p You see, I'm from the future. And communication is limited and forbidden. But everything hangs in the balance. The future holds many unknowns for you and you'll soon learn what is in store for you.
+%p Unaltered, the future sets you and your peers on a path that leads to growth and prosperity. Something, though, lurks beneath the surface. Unaddressed, it will consume you and lead to outcomes that are difficult to even describe. Surely, if I told you them, you'd be unable to fathom their size, scope, and questionable ethics.
+= image_tag '7c6a7938b8e5887ba3b118d6299d197cc8b56df3.png'
+= form_tag('/7c6a7938b8e5887ba3b118d6299d197cc8b56df3', method: :patch) do
+  = password_field_tag :secret
+  = submit_tag '➡'
