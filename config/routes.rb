@@ -15,6 +15,9 @@ Rails.application.routes.draw do
   get '/c75ce6b5a5e70cb15a3092a4284e11044781a624' => 'lines#show'
 
   get '/blacklivesmatter' => 'black_lives_matter#show'
+  get '/e6949ad03ad0aaf8bd16069a9f5da56beef9a903' => 'bands#show'
+  patch '/e6949ad03ad0aaf8bd16069a9f5da56beef9a903' => 'bands#update'
+  get '/3ccd3784d5651349d4654682820dd523abdf97b6' => 'crossword#show'
 
   get '/leaderboard' => 'leaderboard#show'
   get '/status' => 'status#show'

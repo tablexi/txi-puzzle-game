@@ -1,0 +1,39 @@
+:css
+  body {
+    background-color: #333333;
+    padding: 64px;
+    margin: 0;
+  }
+
+  p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .field { padding: 8px 0px; }
+
+%p Clever. Before we continue the story, though, we need to make sure you are from the timeline that you say you are.
+
+= image_tag('e6949ad03ad0aaf8bd16069a9f5da56beef9a903.png')
+
+= form_tag('/e6949ad03ad0aaf8bd16069a9f5da56beef9a903', method: :patch) do
+  .field
+    = text_field_tag 'bands[]'
+  .field
+    = text_field_tag 'bands[]'
+  .field
+    = text_field_tag 'bands[]'
+  .field
+    = text_field_tag 'bands[]'
+  .field
+    = text_field_tag 'bands[]'
+  .field
+    = text_field_tag 'bands[]'
+  .field
+    = text_field_tag 'bands[]'
+  .field
+    = text_field_tag 'bands[]'
+  .field
+    = text_field_tag 'bands[]'
+  = submit_tag '➡'
+
