@@ -4,7 +4,7 @@ class VaultsController < ApplicationController
   end
 
   def update
-    if params[:secret] == 'cerberus'
+    if params[:secret].downcase == 'cerberus'
       redirect_to '/0b8ee0f6f93c9d6e7d5bb26cafff96acd53b96fd'
     else
       redirect_to action: :show
