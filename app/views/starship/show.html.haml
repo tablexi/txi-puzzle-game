@@ -1,0 +1,21 @@
+:css
+  body {
+    background-color: #333333;
+    padding: 64px;
+    margin: 0;
+  }
+
+  p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    max-width: 400px;
+  }
+
+%p Great! Just one more thing to check.
+
+%p _ _ _ _ _ _
+
+= form_tag('/be57274420264d776dc3105e6c733aa52fe5356c', method: :patch) do
+  = password_field_tag :secret
+  = submit_tag '➡'
+

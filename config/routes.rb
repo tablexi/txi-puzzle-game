@@ -2,10 +2,8 @@
 
 Rails.application.routes.draw do
   resource 'secret', only: %w[show update]
-
   get '/853a77881c5eb4733ed5f31b96b10084e9c9525e' => 'vaults#show'
   patch '/853a77881c5eb4733ed5f31b96b10084e9c9525e' => 'vaults#update'
-
   get '/0b8ee0f6f93c9d6e7d5bb26cafff96acd53b96fd' => 'cerberus#show'
 
   get '/applepie' => 'apple_pie#show'
@@ -37,11 +35,11 @@ Rails.application.routes.draw do
   patch '/8adde1eb42e805e3a8233222ceff97952fc3dfb9' => 'sudoku#update'
   get '/3bd9313598d9261c3878b71ad6191d10c8ac5bfa' => 'notion#show'
 
-  # get '/harmony' => 'harmony#show'
-  # get '/harmony/2' => 'harmony#show'
-  # patch '/harmony/2' => 'harmony#show'
-  # get '/harmony/3' => 'harmony#show'
-  # patch '/harmony/3' => 'harmony#show'
+  get '/harmony' => 'harmony#show'
+  patch '/harmony' => 'harmony#update'
+  get '/be57274420264d776dc3105e6c733aa52fe5356c' => 'starship#show'
+  patch '/be57274420264d776dc3105e6c733aa52fe5356c' => 'starship#update'
+  get '/803bb25e8a52afbf8fa670364070cc4dae2622d9' => 'pin#show'
 
   get '/leaderboard' => 'leaderboard#show'
   get '/teams' => 'teams#show'
