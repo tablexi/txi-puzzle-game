@@ -1,0 +1,25 @@
+:css
+  body {
+    background-color: #333333;
+    padding: 64px;
+    margin: 0;
+  }
+
+  p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    max-width: 400px;
+  }
+
+%p Machines could never be so whimsical.
+
+%p So, off to Mars we sent the machines. They did their work dutifully. Carving out a place for humans to live on the surface. They even started to terraform the planet. Changing it from the barren planet of your time into a transforming planet in mine.
+
+%p I've included a directive below that indicates the place where The Return first lands.
+
+= image_tag 'location.png'
+
+= form_tag('/buttercakes', method: :patch) do
+  = password_field_tag :secret
+  = submit_tag '➡'
+
