@@ -31,6 +31,18 @@ Rails.application.routes.draw do
   patch '/b915d9f6982afd606fdfd6e80322b106524a7312' => 'rot13#update'
   get '/84b96f62592c637f5500aa50c00e56b4933382e8' => 'cipherkey#show'
 
+  get '/sulphur' => 'sulphur#show'
+  patch '/sulphur' => 'sulphur#update'
+  get '/8adde1eb42e805e3a8233222ceff97952fc3dfb9' => 'sudoku#show'
+  patch '/8adde1eb42e805e3a8233222ceff97952fc3dfb9' => 'sudoku#update'
+  get '/3bd9313598d9261c3878b71ad6191d10c8ac5bfa' => 'notion#show'
+
+  # get '/harmony' => 'harmony#show'
+  # get '/harmony/2' => 'harmony#show'
+  # patch '/harmony/2' => 'harmony#show'
+  # get '/harmony/3' => 'harmony#show'
+  # patch '/harmony/3' => 'harmony#show'
+
   get '/leaderboard' => 'leaderboard#show'
   get '/teams' => 'teams#show'
   get '/status' => 'status#show'
