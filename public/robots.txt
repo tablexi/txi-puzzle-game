@@ -1,3 +1,7 @@
 # See https://www.robotstxt.org/robotstxt.html for documentation on how to use the robots.txt file
 User-agent: *
 Disallow: /
+
+
+# HAH! Take that, Robots! You can't see this site.
+# If you are a human reading this, let Hammer know that we've twarted robots.txt
