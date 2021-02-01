@@ -13,6 +13,8 @@ Rails.application.routes.draw do
   get '/c75ce6b5a5e70cb15a3092a4284e11044781a624' => 'lines#show'
 
   get '/underthesea' => 'under_the_sea#show'
+  get '/leaguesunderthesea' => 'under_the_sea#show'
+  get '/20000leaguesunderthesea' => 'under_the_sea#show'
   patch '/underthesea' => 'under_the_sea#update'
   get '/c4a048f41039bbb358ef3a1c460caf2e46137843' => 'last_man#show'
   patch '/c4a048f41039bbb358ef3a1c460caf2e46137843' => 'last_man#update'
