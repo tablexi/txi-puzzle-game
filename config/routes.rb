@@ -47,6 +47,7 @@ Rails.application.routes.draw do
   get '/5Kn9PAEHIMw' => 'youtube#show'
   get '/050345' => 'pin_minus#show'
   get '/c3BlY2lhbAo=' => 'special_one#show'
+  get '/rainbow' => 'rainbow#show'
 
   get '/leaderboard' => 'leaderboard#show'
   get '/teams' => 'teams#show'
