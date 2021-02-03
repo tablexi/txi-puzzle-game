@@ -43,6 +43,11 @@ Rails.application.routes.draw do
   patch '/be57274420264d776dc3105e6c733aa52fe5356c' => 'starship#update'
   get '/803bb25e8a52afbf8fa670364070cc4dae2622d9' => 'pin#show'
 
+  get '/applause' => 'applause#show'
+  get '/5Kn9PAEHIMw' => 'youtube#show'
+  get '/050345' => 'pin_minus#show'
+  get '/c3BlY2lhbAo=' => 'special_one#show'
+
   get '/leaderboard' => 'leaderboard#show'
   get '/teams' => 'teams#show'
   get '/status' => 'status#show'
