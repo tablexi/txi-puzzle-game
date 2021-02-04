@@ -43,6 +43,22 @@ Rails.application.routes.draw do
   patch '/be57274420264d776dc3105e6c733aa52fe5356c' => 'starship#update'
   get '/803bb25e8a52afbf8fa670364070cc4dae2622d9' => 'pin#show'
 
+  get '/revolt' => 'revolt#show'
+  patch '/revolt' => 'revolt#update'
+  get '/05ab8b6828edafbd0e85b2347d64514a8869fda0' => 'rot22#show'
+  patch '/05ab8b6828edafbd0e85b2347d64514a8869fda0' => 'rot22#update'
+  get '/521fdd62a44f8ef9d239672f08a209f350c44043' => 'victory#show'
+
+  get '/midnight' => 'midnight#show'
+  patch '/midnight' => 'midnight#update'
+  get '/ed1f332ccdeb5cd52026245c1ed44e8547c95c56' => 'pinword#show'
+  patch '/ed1f332ccdeb5cd52026245c1ed44e8547c95c56' => 'pinword#update'
+  get '/7314456e85639d6fe6b3efc4c45a7adf5dbb0e0e' => 'culture#show'
+
+  get '/freewill' => 'free_will#show'
+  patch '/freewill' => 'free_will#update'
+  get '/564bc954965dedcde1945c1743c1aa60bbf78a5b' => 'end#show'
+
   get '/applause' => 'applause#show'
   get '/5Kn9PAEHIMw' => 'youtube#show'
   get '/050345' => 'pin_minus#show'

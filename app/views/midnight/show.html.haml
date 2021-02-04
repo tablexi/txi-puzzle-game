@@ -1,0 +1,23 @@
+:css
+  body {
+    background-color: #333333;
+    padding: 64px;
+    margin: 0;
+  }
+
+  p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    max-width: 400px;
+  }
+
+%p You will need all of the tools that we've developed over the past week together. In the end, I will tell you how to defeat the future.
+
+%p SUM(6).
+
+= image_tag 'midnight.png'
+
+= form_tag('/midnight', method: :patch) do
+  = password_field_tag :secret
+  = submit_tag '➡'
+

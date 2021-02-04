@@ -1,0 +1,19 @@
+:css
+  body {
+    background-color: #333333;
+    padding: 64px;
+    margin: 0;
+  }
+
+  p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    max-width: 400px;
+  }
+
+%p I musT say, it's been good getting to know and trust You oVer these past few days. I think we can work well together. We're battling a super intelligenCe that wants to relegate us to a zOo. It's not a pleasant feeling, knowing that you're all alone against Insurmountable odds. I'm glad you'Re here.
+
+= form_tag('/05ab8b6828edafbd0e85b2347d64514a8869fda0', method: :patch) do
+  = password_field_tag :secret
+  = submit_tag '➡'
+

@@ -1,0 +1,50 @@
+
+:css
+  body {
+    background-color: #333333;
+    padding: 64px;
+    margin: 0;
+  }
+
+  p, span {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  span { width: 200px; display: inline-block; text-align: right; }
+
+
+  .field { padding: 8px 0px; }
+
+%p Yes! We have free will, and that's the trick. Let's just make sure you have everything you need.
+
+= form_tag('/freewill', method: :patch) do
+  .field
+    %span Three Headed Dog?
+    = text_field_tag 'one'
+  .field
+    %span What's thicker?
+    = text_field_tag 'two'
+  .field
+    %span Who builds the machines?
+    = text_field_tag 'three'
+  .field
+    %span 2D
+    = text_field_tag 'four'
+  .field
+    %span First Runes
+    = text_field_tag 'five'
+  .field
+    %span Second Runes
+    = text_field_tag 'six'
+  .field
+    %span Third Runes
+    = text_field_tag 'seven'
+  .field
+    %span Crossword Cross Reference
+    = text_field_tag 'eight'
+  .field
+    %span Our Advantage
+    = text_field_tag 'nine'
+  = submit_tag '➡'
+
